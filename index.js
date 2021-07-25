@@ -1,5 +1,5 @@
-const profile = require('./profile');
+const profile = require('./profile')
 
 console.log(
-  profile('John Doe', 'johndoe@gmail.com', 24),
-);
+  profile('John Doe', 'johndoe@gmail.com', 24)
+)
