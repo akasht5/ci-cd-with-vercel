@@ -3,8 +3,8 @@ on: [push]
 jobs:
   eslint:
     name: ESLint and Test
-    runs-on: windows-2017
-    
+    runs-on: windows-latest
+
     steps:
       - run: node -v
       - name: Checkout code
