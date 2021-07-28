@@ -3,7 +3,7 @@ on: [push]
 jobs:
   eslint:
     name: ESLint and Test
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - run: node -v
