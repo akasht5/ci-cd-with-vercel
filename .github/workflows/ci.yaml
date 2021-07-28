@@ -2,7 +2,7 @@ name: CI
 on: [push]
 jobs:
   eslint:
-    name: Lint code base
+    name: ESLint and Test
     runs-on: ubuntu-latest
 
     steps:
@@ -13,3 +13,5 @@ jobs:
         run: npm ci
       - name: Run ESLint
         run: npm run lint
+      - name: Run Test
+        run: npm run ci:test
