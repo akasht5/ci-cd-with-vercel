@@ -1,5 +1,12 @@
 import profile from './profile';
 
-console.log(
-  profile('John Doe', 'johndoe@gmail.com', 24),
-);
+const name = document.querySelector('#name');
+const email = document.querySelector('#email');
+const age = document.querySelector('#age');
+const submitBtn = document.querySelector('#submit');
+const targetDiv = document.querySelector('#result');
+
+submitBtn.addEventListener('click', () => {
+  const results = profile(name.value, age.value, email.value);
+  targetDiv.innerHTML = results;
+});
