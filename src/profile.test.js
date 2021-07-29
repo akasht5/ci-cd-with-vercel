@@ -1,4 +1,4 @@
-const profile = require('./profile');
+import profile from './profile';
 
 test('checks that profile returns a correct sentence', () => {
   const result = profile('john doe', 'jonny10@gmail.com', 27);
