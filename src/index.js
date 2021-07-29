@@ -7,6 +7,6 @@ const submitBtn = document.querySelector('#submit');
 const targetDiv = document.querySelector('#result');
 
 submitBtn.addEventListener('click', () => {
-  const results = profile(name.value, age.value, email.value);
+  const results = profile(name.value, email.value, age.value);
   targetDiv.innerHTML = results;
 });
