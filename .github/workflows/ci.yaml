@@ -1,7 +1,7 @@
 name: CI
 on: [push]
 jobs:
-  eslint:
+  standard-checks:
     name: ESLint and Test
     runs-on: ubuntu-latest
 
@@ -18,3 +18,5 @@ jobs:
         run: npm run ci:test
       - name: Build and Output
         run: npm run build
+      - name: Lighthouse Benchmarks
+        run: npm run ci:lighthouse
